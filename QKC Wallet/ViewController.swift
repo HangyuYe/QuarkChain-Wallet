@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import WebKit
+
+
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let url:URL = URL(string: "https://testnet.quarkchain.io/wallet")!
+        let urlRequest:URLRequest = URLRequest(url: url)
+        webView.load(urlRequest)
     }
 
     override func didReceiveMemoryWarning() {
