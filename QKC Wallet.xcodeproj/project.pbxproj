@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C4954F34210A5EEF00AC51A6 /* QKC Testnet Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QKC Testnet Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4954F34210A5EEF00AC51A6 /* Testnet Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testnet Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4954F37210A5EEF00AC51A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4954F39210A5EEF00AC51A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4954F3C210A5EEF00AC51A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		C4954F35210A5EEF00AC51A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4954F34210A5EEF00AC51A6 /* QKC Testnet Wallet.app */,
+				C4954F34210A5EEF00AC51A6 /* Testnet Wallet.app */,
 				C4954F48210A5EF000AC51A6 /* QKC WalletTests.xctest */,
 				C4954F53210A5EF000AC51A6 /* QKC WalletUITests.xctest */,
 			);
@@ -142,7 +142,7 @@
 			);
 			name = "QKC Wallet";
 			productName = "QKC Wallet";
-			productReference = C4954F34210A5EEF00AC51A6 /* QKC Testnet Wallet.app */;
+			productReference = C4954F34210A5EEF00AC51A6 /* Testnet Wallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C4954F47210A5EF000AC51A6 /* QKC WalletTests */ = {
@@ -433,12 +433,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82YFV2CEZJ;
 				INFOPLIST_FILE = "QKC Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.QKC-Wallet";
-				PRODUCT_NAME = "QKC Testnet Wallet";
+				PRODUCT_NAME = "Testnet Wallet";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,12 +452,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82YFV2CEZJ;
 				INFOPLIST_FILE = "QKC Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.QKC-Wallet";
-				PRODUCT_NAME = "QKC Testnet Wallet";
+				PRODUCT_NAME = "Testnet Wallet";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
