@@ -1,4 +1,4 @@
-###This is the mobile version of QuarkChain Testnet Wallet
+# This is the mobile version of QuarkChain Testnet Wallet
 
 ## TESTNET ONLY
 
