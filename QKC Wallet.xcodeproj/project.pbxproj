@@ -14,6 +14,7 @@
 		C4954F42210A5EF000AC51A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4954F40210A5EF000AC51A6 /* LaunchScreen.storyboard */; };
 		C4954F4D210A5EF000AC51A6 /* QKC_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F4C210A5EF000AC51A6 /* QKC_WalletTests.swift */; };
 		C4954F58210A5EF000AC51A6 /* QKC_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F57210A5EF000AC51A6 /* QKC_WalletUITests.swift */; };
+		C4C6EA6E210ABE9E003C025F /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6EA6D210ABE9E003C025F /* StorageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C4954F53210A5EF000AC51A6 /* QKC WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QKC WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4954F57210A5EF000AC51A6 /* QKC_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKC_WalletUITests.swift; sourceTree = "<group>"; };
 		C4954F59210A5EF000AC51A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C6EA6D210ABE9E003C025F /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C4954F37210A5EEF00AC51A6 /* AppDelegate.swift */,
 				C4954F39210A5EEF00AC51A6 /* ViewController.swift */,
+				C4C6EA6D210ABE9E003C025F /* StorageViewController.swift */,
 				C4954F3B210A5EEF00AC51A6 /* Main.storyboard */,
 				C4954F3E210A5EF000AC51A6 /* Assets.xcassets */,
 				C4954F40210A5EF000AC51A6 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				C4954F3A210A5EEF00AC51A6 /* ViewController.swift in Sources */,
 				C4954F38210A5EEF00AC51A6 /* AppDelegate.swift in Sources */,
+				C4C6EA6E210ABE9E003C025F /* StorageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
