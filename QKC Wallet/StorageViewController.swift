@@ -10,9 +10,8 @@ import UIKit
 
 class StorageViewController: UIViewController {
 
-    @IBOutlet weak var privateKey1: UILabel!
-    @IBOutlet weak var privateKey2: UILabel!
-    @IBOutlet weak var privateKey3: UILabel!
+    @IBOutlet weak var privateKey: UILabel!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,28 +25,11 @@ class StorageViewController: UIViewController {
     }
     
     @IBAction func firstCopyPressed(_ sender: Any) {
-        UIPasteboard.general.string = privateKey1.text
+        UIPasteboard.general.string = privateKey.text
     }
     
     @IBAction func firstPastePressed(_ sender: Any) {
-        privateKey1.text = UIPasteboard.general.string
-    }
-    
-    @IBAction func secondCopyPressed(_ sender: Any) {
-        UIPasteboard.general.string = privateKey2.text
-    }
-    
-    @IBAction func secondPastePressed(_ sender: Any) {
-        privateKey2.text = UIPasteboard.general.string
-    }
-    
-    @IBAction func thirdCopyPressed(_ sender: Any) {
-        UIPasteboard.general.string = privateKey3.text
-    }
-    
-    @IBAction func thirdPastePressed(_ sender: Any) {
-        privateKey3.text = UIPasteboard.general.string
-        
+        privateKey.text = UIPasteboard.general.string
     }
     
 }
