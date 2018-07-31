@@ -91,7 +91,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Private Key Storage" id="w3T-Bl-Ygc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2dc-i3-Id4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2dc-i3-Id4">
+                            <connections>
+                                <segue destination="RxK-lR-gsX" kind="presentation" identifier="addItem" id="I3y-R9-ZRP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHj-G1-pTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,7 +109,45 @@
                     <view key="view" contentMode="scaleToFill" id="0I4-y3-yMt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-GQ-sjn">
+                                <rect key="frame" x="16" y="75" width="343" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Note Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Puv-E4-sO6">
+                                        <rect key="frame" x="0.0" y="8" width="343" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e2u-DU-trM">
+                                        <rect key="frame" x="0.0" y="46" width="343" height="226"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1t-pq-Hkk">
+                                <rect key="frame" x="16" y="363" width="343" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-O2-m1J">
+                                        <rect key="frame" x="8" y="8" width="327" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="udD-Ki-Dm3" appends="YES" id="yQv-OS-yfC"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Cix-qA-elO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="3P9-MO-4Zz">
@@ -114,8 +156,9 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE9-Ad-I4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="udD-Ki-Dm3"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="720"/>
+            <point key="canvasLocation" x="2407.1999999999998" y="720.08995502248877"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ltv-po-sWr">
