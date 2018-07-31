@@ -8,6 +8,9 @@
 
 import UIKit
 
+var privateKeyString = ""
+var privateKeyArray: Array<String> = [""]
+
 class StorageViewController: UIViewController {
 
     @IBOutlet weak var privateKey: UILabel!
@@ -25,7 +28,10 @@ class StorageViewController: UIViewController {
     }
     
     @IBAction func firstCopyPressed(_ sender: Any) {
-        UIPasteboard.general.string = privateKey.text
+        
+        UIPasteboard.general.string = privateKeyString
+        privateKeyString = privateKey.text!
+        
     }
     
     @IBAction func firstPastePressed(_ sender: Any) {
