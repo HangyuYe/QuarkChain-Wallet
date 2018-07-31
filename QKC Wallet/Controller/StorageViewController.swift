@@ -8,34 +8,3 @@
 
 import UIKit
 
-var privateKeyString = ""
-var privateKeyArray: Array<String> = [""]
-
-class StorageViewController: UIViewController {
-
-    @IBOutlet weak var privateKey: UILabel!
-   
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func firstCopyPressed(_ sender: Any) {
-        
-        UIPasteboard.general.string = privateKeyString
-        privateKeyString = privateKey.text!
-        
-    }
-    
-    @IBAction func firstPastePressed(_ sender: Any) {
-        privateKey.text = UIPasteboard.general.string
-    }
-    
-}
