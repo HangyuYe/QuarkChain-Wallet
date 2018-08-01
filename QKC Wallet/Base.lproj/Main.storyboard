@@ -135,7 +135,7 @@
         <!--Detail-->
         <scene sceneID="XPn-Hl-Wtd">
             <objects>
-                <viewController id="jOh-eP-xoJ" sceneMemberID="viewController">
+                <viewController id="jOh-eP-xoJ" customClass="StorageViewController" customModule="Testnet_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0I4-y3-yMt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,9 +206,20 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="i47-p4-Jw9"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gbT-qS-8zG"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="noteDescriptionLabel" destination="e2u-DU-trM" id="hLt-32-1Sq"/>
+                        <outlet property="noteImagView" destination="e1t-pq-Hkk" id="tyk-Bc-F9Z"/>
+                        <outlet property="noteImageView" destination="u7K-O2-m1J" id="bIB-Kp-ptQ"/>
+                        <outlet property="noteInfoView" destination="TEg-GQ-sjn" id="LNL-Vz-bvq"/>
+                        <outlet property="noteNameLable" destination="Puv-E4-sO6" id="ICE-Lb-S9L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE9-Ad-I4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="udD-Ki-Dm3"/>
+                <tapGestureRecognizer id="udD-Ki-Dm3">
+                    <connections>
+                        <action selector="prickImageWasPress:" destination="jOh-eP-xoJ" id="UiC-Hv-lF1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2407.1999999999998" y="720.08995502248877"/>
         </scene>

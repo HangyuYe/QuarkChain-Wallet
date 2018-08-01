@@ -48,10 +48,10 @@ class notesTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell", for: indexPath) as! noteTableViewCell
         
         let note: Notes = notes[indexPath.row]
-        cell.configureCell(note: note)
+        cell.configureCell(notes: note)
         cell.backgroundColor = UIColor.clear
 
         return cell
@@ -73,16 +73,16 @@ class notesTableViewController: UITableViewController {
     
     func retrieveNotes() {
         managedObjectContext?.perform {
-            self.fetchNotesFromCoreData { (notes) in
+            self.fetchNoteFromCoreData { (notes) in
                 if let notes = notes{
-                    self. notes = notes
+                    self.notes = notes
                     self.tableView.reloadData()
                 }
             }
         }
     }
     
-    func fetchNoteFromCoreData(completion: @escaping([Note]?) -> Void) {
+    func fetchNoteFromCoreData(completion: @escaping([Notes]?) -> Void) {
         managedObjectContext?.perform {
             var notes = [Notes]()
             let request: NSFetchRequest<Notes> = Notes.fetchRequest()
