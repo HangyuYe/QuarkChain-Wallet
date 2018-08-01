@@ -208,10 +208,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="noteDescriptionLabel" destination="e2u-DU-trM" id="hLt-32-1Sq"/>
-                        <outlet property="noteImagView" destination="e1t-pq-Hkk" id="tyk-Bc-F9Z"/>
+                        <outlet property="noteImagView" destination="u7K-O2-m1J" id="vcv-po-XXu"/>
                         <outlet property="noteImageView" destination="u7K-O2-m1J" id="bIB-Kp-ptQ"/>
                         <outlet property="noteInfoView" destination="TEg-GQ-sjn" id="LNL-Vz-bvq"/>
-                        <outlet property="noteNameLable" destination="Puv-E4-sO6" id="ICE-Lb-S9L"/>
+                        <outlet property="noteNameLabel" destination="Puv-E4-sO6" id="ICE-Lb-S9L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE9-Ad-I4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
