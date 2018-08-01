@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesTableViewCell" rowHeight="125" id="EPj-kR-iWT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesTableViewCell" rowHeight="125" id="EPj-kR-iWT" customClass="noteTableViewCell" customModule="Testnet_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EPj-kR-iWT" id="d98-ss-sTL">
@@ -76,7 +76,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9c-Yc-88o">
                                                     <rect key="frame" x="108" y="38" width="243" height="62"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="243" id="AON-ts-Izh"/>
                                                         <constraint firstAttribute="width" secondItem="r9c-Yc-88o" secondAttribute="height" multiplier="243:62" id="FnD-I5-QL3"/>
                                                         <constraint firstAttribute="height" constant="62" id="QOy-kc-Kzt"/>
                                                     </constraints>
@@ -108,6 +107,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="noteDescriptionLabel" destination="r9c-Yc-88o" id="m1y-gb-7fq"/>
+                                    <outlet property="noteImageView" destination="mNF-la-HeT" id="coL-9X-F7r"/>
+                                    <outlet property="noteNameLabel" destination="Cag-bf-ejo" id="hld-LJ-GV3"/>
+                                    <outlet property="shadowView" destination="juR-Bi-oEY" id="D0w-Jh-PRl"/>
                                     <segue destination="jOh-eP-xoJ" kind="show" identifier="showNotes" id="LQT-66-r5J"/>
                                 </connections>
                             </tableViewCell>
