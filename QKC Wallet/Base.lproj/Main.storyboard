@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--DApp-->
+        <scene sceneID="9dG-ie-Suz">
+            <objects>
+                <viewController id="Wcd-V6-cwc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ph-Mf-OKO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WFa-rS-rSS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DApp" id="Dx9-FY-KEs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X35-wn-yqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-904"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="Wvn-rQ-XUa">
+            <objects>
+                <viewController id="ruG-R9-9eX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXO-6p-xCM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yWR-hS-W7a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" id="gQ5-qA-ncP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oX-t9-S4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="1379"/>
+        </scene>
         <!--Wallet-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -130,7 +162,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHj-G1-pTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="720.08995502248877"/>
+            <point key="canvasLocation" x="1644" y="719"/>
         </scene>
         <!--Detail-->
         <scene sceneID="XPn-Hl-Wtd">
@@ -152,7 +184,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Note Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e2u-DU-trM">
                                         <rect key="frame" x="8" y="37" width="343" height="235"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -203,8 +235,16 @@
                         <viewLayoutGuide key="safeArea" id="Cix-qA-elO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="3P9-MO-4Zz">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="i47-p4-Jw9"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gbT-qS-8zG"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="i47-p4-Jw9">
+                            <connections>
+                                <action selector="cancel:" destination="jOh-eP-xoJ" id="oCW-yM-Sqq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gbT-qS-8zG">
+                            <connections>
+                                <action selector="saveButtonWasPressed:" destination="jOh-eP-xoJ" id="sOm-CV-Eyg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="noteDescriptionLabel" destination="e2u-DU-trM" id="hLt-32-1Sq"/>
@@ -221,7 +261,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2407.1999999999998" y="720.08995502248877"/>
+            <point key="canvasLocation" x="2454" y="719"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ltv-po-sWr">
@@ -234,18 +274,37 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Nts-si-q4r"/>
+                        <segue destination="Wcd-V6-cwc" kind="relationship" relationship="viewControllers" id="K2B-ib-Cs5"/>
+                        <segue destination="ruG-R9-9eX" kind="relationship" relationship="viewControllers" id="XJR-NI-GV3"/>
                         <segue destination="pwf-HO-bk3" kind="relationship" relationship="viewControllers" id="xfL-vM-t8d"/>
+                        <segue destination="DBR-wt-Ax3" kind="relationship" relationship="viewControllers" id="u0o-2b-nba"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpH-AL-H7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-120" y="293"/>
         </scene>
+        <!--Me-->
+        <scene sceneID="XcR-F7-126">
+            <objects>
+                <viewController id="DBR-wt-Ax3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6or-ee-CUf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ood-Uc-mDi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" id="Edg-Qe-hgA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nf6-9D-H2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="1379"/>
+        </scene>
         <!--Storage-->
         <scene sceneID="h9h-7J-zjO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pwf-HO-bk3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Storage" image=" " landscapeImage="Storage" selectedImage="Storage" id="MtB-mn-DnJ"/>
+                    <tabBarItem key="tabBarItem" title="Storage" image="Storage" landscapeImage="Storage" selectedImage="Storage" id="MtB-mn-DnJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q2x-g2-5lc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -258,7 +317,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsJ-b4-WZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="720.98950524737631"/>
+            <point key="canvasLocation" x="806" y="720"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Syq-Fb-vVX">
@@ -280,7 +339,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" " width="16" height="16"/>
         <image name="Storage" width="30" height="30"/>
         <image name="Wallet" width="30" height="30"/>
     </resources>

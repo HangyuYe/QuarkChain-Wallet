@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
         
         let color = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1)
-        let font = UIFont(name:"Roboto-Medium", size: 18)!
+        let font = UIFont(name:"Menlo", size: 18)!
         
         let attributes: [NSAttributedStringKey: Any]? = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: color]
         
