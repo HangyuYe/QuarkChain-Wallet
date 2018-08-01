@@ -23,9 +23,9 @@ class StorageViewController: UIViewController, UITextFieldDelegate, UINavigation
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }
     
-    var notesFetchedResultsController: NSFetchedResultsController <Notes>!
-    var notes = [Notes]()
-    var note: Notes?
+    var notesFetchedResultsController: NSFetchedResultsController <Note>!
+    var notes = [Note]()
+    var note: Note?
     var isExisting = false
     var indexPath: Int?
     

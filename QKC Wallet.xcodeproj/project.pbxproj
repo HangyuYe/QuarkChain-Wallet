@@ -16,7 +16,7 @@
 		C4954F58210A5EF000AC51A6 /* QKC_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F57210A5EF000AC51A6 /* QKC_WalletUITests.swift */; };
 		C4E7D03A210FB57000FBC429 /* PrivateKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7D039210FB57000FBC429 /* PrivateKeyView.swift */; };
 		C4E7D03E210FB6C100FBC429 /* BtnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7D03D210FB6C100FBC429 /* BtnController.swift */; };
-		C4FD3D0721111BF4002208A0 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4FD3D0521111BF4002208A0 /* Notes.xcdatamodeld */; };
+		C4FD3D0721111BF4002208A0 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4FD3D0521111BF4002208A0 /* Note.xcdatamodeld */; };
 		C4FD3D832111231E002208A0 /* notesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD3D822111231E002208A0 /* notesTableViewController.swift */; };
 		C4FD3D8721112D28002208A0 /* noteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD3D8621112D28002208A0 /* noteTableViewCell.swift */; };
 		C4FD3D8921113128002208A0 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD3D8821113128002208A0 /* StorageViewController.swift */; };
@@ -116,7 +116,7 @@
 				C4954F3E210A5EF000AC51A6 /* Assets.xcassets */,
 				C4954F40210A5EF000AC51A6 /* LaunchScreen.storyboard */,
 				C4954F43210A5EF000AC51A6 /* Info.plist */,
-				C4FD3D0521111BF4002208A0 /* Notes.xcdatamodeld */,
+				C4FD3D0521111BF4002208A0 /* Note.xcdatamodeld */,
 			);
 			path = "QKC Wallet";
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				C4954F3A210A5EEF00AC51A6 /* ViewController.swift in Sources */,
 				C4954F38210A5EEF00AC51A6 /* AppDelegate.swift in Sources */,
 				C4E7D03A210FB57000FBC429 /* PrivateKeyView.swift in Sources */,
-				C4FD3D0721111BF4002208A0 /* Notes.xcdatamodeld in Sources */,
+				C4FD3D0721111BF4002208A0 /* Note.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,13 +628,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C4FD3D0521111BF4002208A0 /* Notes.xcdatamodeld */ = {
+		C4FD3D0521111BF4002208A0 /* Note.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C4FD3D0621111BF4002208A0 /* Model.xcdatamodel */,
 			);
 			currentVersion = C4FD3D0621111BF4002208A0 /* Model.xcdatamodel */;
-			path = Notes.xcdatamodeld;
+			path = Note.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

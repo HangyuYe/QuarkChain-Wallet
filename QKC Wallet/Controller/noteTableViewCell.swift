@@ -35,11 +35,11 @@ class noteTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(notes: Notes) {
-        self.noteNameLabel.text = notes.noteName?.uppercased()
-        self.noteDescriptionLabel.text = notes.noteDecription
+    func configureCell(note: Note) {
+        self.noteNameLabel.text = note.noteName?.uppercased()
+        self.noteDescriptionLabel.text = note.noteDecription
         
-        self.noteImageView.image = UIImage(data: notes.noteImage! as Data)
+        self.noteImageView.image = UIImage(data: note.noteImage! as Data)
     }
 
 }

@@ -11,7 +11,7 @@ import CoreData
 
 class notesTableViewController: UITableViewController {
     
-    var notes = [Notes]()
+    var notes = [Note]()
     
     var managedObjectContext: NSManagedObjectContext? {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -50,8 +50,8 @@ class notesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "notesTableViewCell", for: indexPath) as! noteTableViewCell
         
-        let note: Notes = notes[indexPath.row]
-        cell.configureCell(notes: note)
+        let note: Note = notes[indexPath.row]
+        cell.configureCell(note: note)
         cell.backgroundColor = UIColor.clear
 
         return cell
@@ -82,10 +82,10 @@ class notesTableViewController: UITableViewController {
         }
     }
     
-    func fetchNoteFromCoreData(completion: @escaping([Notes]?) -> Void) {
+    func fetchNoteFromCoreData(completion: @escaping([Note]?) -> Void) {
         managedObjectContext?.perform {
-            var notes = [Notes]()
-            let request: NSFetchRequest<Notes> = Notes.fetchRequest()
+            var notes = [Note]()
+            let request: NSFetchRequest<Note> = Note.fetchRequest()
             
             do {
                 notes = try self.managedObjectContext!.fetch(request)
