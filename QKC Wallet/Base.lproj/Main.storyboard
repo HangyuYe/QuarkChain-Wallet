@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WFa-rS-rSS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DApp" id="Dx9-FY-KEs"/>
+                    <tabBarItem key="tabBarItem" title="DApp" image="Dapp" landscapeImage="Dapp" selectedImage="Dapp" id="Dx9-FY-KEs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X35-wn-yqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yWR-hS-W7a"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Game" id="gQ5-qA-ncP"/>
+                    <tabBarItem key="tabBarItem" title="Game" image="Game" landscapeImage="Game" selectedImage="Game" id="gQ5-qA-ncP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oX-t9-S4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,10 +291,16 @@
                     <view key="view" contentMode="scaleToFill" id="6or-ee-CUf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-Ed-dPq">
+                                <rect key="frame" x="16" y="20" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ood-Uc-mDi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" id="Edg-Qe-hgA"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="Me" landscapeImage="Me" selectedImage="Me" id="Edg-Qe-hgA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nf6-9D-H2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,6 +345,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Dapp" width="30" height="30"/>
+        <image name="Game" width="30" height="30"/>
+        <image name="Me" width="30" height="30"/>
         <image name="Storage" width="30" height="30"/>
         <image name="Wallet" width="30" height="30"/>
     </resources>

@@ -17,68 +17,6 @@
             endingLineNumber = "16"
             landmarkName = "noteTableViewCell"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Testnet_Wallet.noteTableViewCell.noteImageView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
-                  moduleName = "Testnet Wallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jerry/Desktop/QKC/QKC%20Wallet/QKC%20Wallet/Controller/noteTableViewCell.swift"
-                  timestampString = "554783466.012586"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Testnet_Wallet.noteTableViewCell.noteImageView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
-                  moduleName = "Testnet Wallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jerry/Desktop/QKC/QKC%20Wallet/QKC%20Wallet/Controller/noteTableViewCell.swift"
-                  timestampString = "554783466.01415"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Testnet_Wallet.noteTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Testnet_Wallet.noteTableViewCell"
-                  moduleName = "Testnet Wallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jerry/Desktop/QKC/QKC%20Wallet/QKC%20Wallet/Controller/noteTableViewCell.swift"
-                  timestampString = "554783466.0155801"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Testnet_Wallet.noteTableViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Testnet_Wallet.noteTableViewCell&gt;"
-                  moduleName = "Testnet Wallet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jerry/Desktop/QKC/QKC%20Wallet/QKC%20Wallet/Controller/noteTableViewCell.swift"
-                  timestampString = "554783466.017041"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "356">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
