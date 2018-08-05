@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4954F38210A5EEF00AC51A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F37210A5EEF00AC51A6 /* AppDelegate.swift */; };
+		C4409CF02117BA2C00C4B631 /* UIBottomExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409CEF2117BA2C00C4B631 /* UIBottomExt.swift */; };
+		C4954F38210A5EEF00AC51A6 /* StorageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F37210A5EEF00AC51A6 /* StorageDelegate.swift */; };
 		C4954F3A210A5EEF00AC51A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4954F39210A5EEF00AC51A6 /* ViewController.swift */; };
 		C4954F3D210A5EEF00AC51A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4954F3B210A5EEF00AC51A6 /* Main.storyboard */; };
 		C4954F3F210A5EF000AC51A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4954F3E210A5EF000AC51A6 /* Assets.xcassets */; };
@@ -38,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4409CEF2117BA2C00C4B631 /* UIBottomExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBottomExt.swift; sourceTree = "<group>"; };
 		C4954F34210A5EEF00AC51A6 /* Testnet Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testnet Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4954F37210A5EEF00AC51A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4954F37210A5EEF00AC51A6 /* StorageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDelegate.swift; sourceTree = "<group>"; };
 		C4954F39210A5EEF00AC51A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4954F3C210A5EEF00AC51A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4954F3E210A5EF000AC51A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4409CEE2117B9CA00C4B631 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C4954F37210A5EEF00AC51A6 /* StorageDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		C4954F2B210A5EEF00AC51A6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +115,9 @@
 		C4954F36210A5EEF00AC51A6 /* QKC Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				C4E7D03C210FB58700FBC429 /* View */,
+				C4409CEE2117B9CA00C4B631 /* Delegate */,
+				C4E7D03C210FB58700FBC429 /* Extensions */,
 				C4E7D03B210FB57400FBC429 /* Controller */,
-				C4954F37210A5EEF00AC51A6 /* AppDelegate.swift */,
 				C4954F3B210A5EEF00AC51A6 /* Main.storyboard */,
 				C4954F3E210A5EF000AC51A6 /* Assets.xcassets */,
 				C4954F40210A5EF000AC51A6 /* LaunchScreen.storyboard */,
@@ -144,11 +154,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C4E7D03C210FB58700FBC429 /* View */ = {
+		C4E7D03C210FB58700FBC429 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C4409CEF2117BA2C00C4B631 /* UIBottomExt.swift */,
 			);
-			path = View;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C4FD3D8A211154C8002208A0 /* Storage ViewController */ = {
@@ -304,8 +315,9 @@
 				C4FD3D8721112D28002208A0 /* noteTableViewCell.swift in Sources */,
 				C4FD3D8921113128002208A0 /* StorageViewController.swift in Sources */,
 				C4954F3A210A5EEF00AC51A6 /* ViewController.swift in Sources */,
-				C4954F38210A5EEF00AC51A6 /* AppDelegate.swift in Sources */,
+				C4954F38210A5EEF00AC51A6 /* StorageDelegate.swift in Sources */,
 				C4FD3D0721111BF4002208A0 /* Note.xcdatamodeld in Sources */,
+				C4409CF02117BA2C00C4B631 /* UIBottomExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class StorageDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -76,6 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-let appDelegate = UIApplication.shared.delegate as! AppDelegate
+let appDelegate = UIApplication.shared.delegate as! StorageDelegate
 let context = appDelegate.persistentContainer.viewContext
 

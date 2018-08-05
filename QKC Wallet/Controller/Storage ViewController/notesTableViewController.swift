@@ -14,7 +14,7 @@ class notesTableViewController: UITableViewController {
     var notes = [Note]()
     
     var managedObjectContext: NSManagedObjectContext? {
-        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        return (UIApplication.shared.delegate as! StorageDelegate).persistentContainer.viewContext
     }
     
     override func viewDidLoad() {

@@ -20,7 +20,7 @@ class StorageViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var noteImageView: UIImageView!
     
     var managedObjectContext: NSManagedObjectContext? {
-        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        return (UIApplication.shared.delegate as! StorageDelegate).persistentContainer.viewContext
     }
     
     var notesFetchedResultsController: NSFetchedResultsController <Note>!
